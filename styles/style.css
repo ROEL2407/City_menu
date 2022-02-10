@@ -1,0 +1,13 @@
+/* --- Styling Reset --- */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* --- End Styling Reset --- */
