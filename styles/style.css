@@ -4,6 +4,7 @@
 *::before {
     box-sizing: border-box;
     padding: 0;
+    margin: 0;
 }
 
 a {
@@ -11,3 +12,63 @@ a {
 }
 
 /* --- End Styling Reset --- */
+
+body {
+    background-color: white;
+}
+
+body > header:first-of-type {
+    font-family: 'Syne Tactile', cursive;
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    writing-mode: vertical-rl;
+    text-align: center;
+}
+
+main {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    padding: 10px 10px 20px 10px;
+}
+
+main section {
+    position: relative;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1),
+      15px 15px 15px rgba(0,0,0,0.1),
+      25px 25px 25px rgba(0,0,0,0.1),
+      30px 30px 30px rgba(0,0,0,0.1),
+      inset 1px 1px 2px #fff;
+    background-color: white;
+    padding: 10px 15px;
+    text-align: center;
+    border: 1px solid grey;
+}
+
+main section::after {
+    content: "";
+    position: absolute;
+    background-image: radial-gradient(circle, rgba(0,0,0,1) 30%, rgba(85,85,85,0) 100%);
+
+    z-index: -1;
+    top: -1px;
+    left: -1px;
+    width: 110%;
+    height: 110%;
+    -webkit-clip-path: polygon(0% 91%, 6% 94%, 95% 94%, 95% 5%, 91% 0%, 91% 91%);
+    clip-path: polygon(0% 91%, 6% 94%, 95% 94%, 95% 4%, 91% 0%, 91% 91%);
+    transform-origin: top;
+    pointer-events: none;
+}
+
+main section h2 {
+    font-family: 'Redressed', cursive;
+}
+
+main section dd:nth-of-type(even) {
+   margin-bottom: 10px; 
+}
