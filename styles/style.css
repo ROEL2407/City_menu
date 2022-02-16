@@ -5,6 +5,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    z-index: 0;
 }
 
 a {
@@ -14,10 +15,11 @@ a {
 /* --- End Styling Reset --- */
 
 body {
-    background-color: white;
+    background-color: #666666;
 }
 
 body > header:first-of-type {
+    color: white;
     font-family: 'Syne Tactile', cursive;
     position: fixed;
     z-index: -1;
@@ -28,6 +30,8 @@ body > header:first-of-type {
 }
 
 main {
+    background-color: #666666;
+    position: relative;
     width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -38,6 +42,7 @@ main {
 
 main section {
     position: relative;
+    z-index: 1;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.1),
       15px 15px 15px rgba(0,0,0,0.1),
       25px 25px 25px rgba(0,0,0,0.1),
@@ -46,29 +51,125 @@ main section {
     background-color: white;
     padding: 10px 15px;
     text-align: center;
-    border: 1px solid grey;
+    border: 3px solid #333333;
 }
 
-main section::after {
+main section::before {
     content: "";
     position: absolute;
+    background-color: lightgrey;
     background-image: radial-gradient(circle, rgba(0,0,0,1) 30%, rgba(85,85,85,0) 100%);
-
-    z-index: -1;
     top: -1px;
     left: -1px;
-    width: 110%;
-    height: 110%;
-    -webkit-clip-path: polygon(0% 91%, 6% 94%, 95% 94%, 95% 5%, 91% 0%, 91% 91%);
-    clip-path: polygon(0% 91%, 6% 94%, 95% 94%, 95% 4%, 91% 0%, 91% 91%);
+    width: 111.5%;
+    height: 109.75%;
+    -webkit-clip-path: polygon(0% 91.8%, 3% 93%, 92% 93%, 92% 3%, 90.3% 0%, 90.3% 91.8%);
+    clip-path: polygon(0% 91.8%, 3% 93%, 92% 93%, 92% 3%, 90.3% 0%, 90.3% 91.8%);
     transform-origin: top;
     pointer-events: none;
 }
 
 main section h2 {
     font-family: 'Redressed', cursive;
+    margin-bottom: 20px;
 }
 
 main section dd:nth-of-type(even) {
    margin-bottom: 10px; 
 }
+/* ----- Autootje ---- */
+main > div {
+    display: grid;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    height: 30px;
+    width: 25px;
+}
+
+main > div::before {
+    content: "";
+    display: inline-block;
+    height: 20px;
+    width: 21px;
+    border: 3px solid red;
+    background-color: white;
+    border-radius: 5px 5px 0px 0px;
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 2.4px;
+}
+
+main > div::after {
+    content: "";
+    display: inline-block;
+    height: 10px;
+    width: 25px;
+    background-color: red;
+    grid-column: 1;
+    grid-row: 1;
+    border-radius: 5px 5px 0px 0px;
+    margin-top: 10px;
+}
+/* ---- lights ---- */
+main > div > div:first-of-type {
+    position: relative;
+    display: grid;
+    width: 25px;
+    height: 10px;
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 10px;
+    z-index: 1;
+}
+
+main > div > div:first-of-type:before,
+main > div > div:first-of-type:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: yellow;
+    grid-column: 1;
+    grid-row: 1;
+    border-radius: 10px;
+}
+/* ---- end lights ---- */
+/* ---- wheels ---- */
+
+main > div > div:last-of-type {
+    position: relative;
+    display: grid;
+    width: 25px;
+    height: 10px;
+}
+
+main > div > div:last-of-type:before,
+main > div > div:last-of-type:after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 3px;
+    height: 5px;
+    background-color: black;
+    grid-column: 1;
+    grid-row: 1;
+}
+/* ---- end wheels ---- */
+
+/* ---- wheels and lights ---- */
+
+main > div > div:first-of-type:before,
+main > div > div:last-of-type:before {
+    left: 3px;
+}
+
+main > div > div:first-of-type:after,
+main > div > div:last-of-type:after {
+    right: 4px;
+}
+/* ---- end wheels and lights ---- */
+
+/* ----- end Autootje ---- */
