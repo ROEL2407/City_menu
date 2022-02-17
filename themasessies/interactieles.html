@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="checkbox"]:checked + item {}/* om  item aan te passen op checkbox click*/
+        input ~ item {} /* alle items die erachter komen*/
+        input[type="radio"]:indeterminate + item {} /* voor als er nog geen keuze is gemaakt bij radiobuttons */
+        body:focus-within {} /* style de body als er focus gemaakt wordt op een item binnen de body */
+        /* position absolute met left -1000 triggert niet een scrollbar, met right wel */
+        item:target {} /* vanuit een a tag die de href="id" heeft kan je de kleur veranderen */
+
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="naam">
+    <label for="naam"></label> <!-- click hierop werkt ook als checkbox (idem voor radiobuttons ) hover werkt ook op labels voor t aanpassen van de input -->
+</body>
+</html>
