@@ -80,6 +80,11 @@ main section h2 {
 main section dd:nth-of-type(even) {
    margin-bottom: 10px; 
 }
+
+dl dd:nth-child(3n)::before {
+    content: "\20AC";
+}
+
 /* ----- Autootje ---- */
 main > div {
     display: grid;
