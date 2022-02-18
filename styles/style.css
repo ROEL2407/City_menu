@@ -36,8 +36,8 @@ main {
     width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
+    grid-column-gap: 4vw;
+    grid-row-gap: 6vh;
     padding: 10px 10px 20px 10px;
 }
 
@@ -65,8 +65,8 @@ main section::before {
     left: -1px;
     width: 111.5%;
     height: 109.75%;
-    -webkit-clip-path: polygon(0% 91.8%, 3% 93%, 92% 93%, 92% 3%, 90.3% 0%, 90.3% 91.8%);
-    clip-path: polygon(0% 91.8%, 3% 93%, 92% 93%, 92% 3%, 90.3% 0%, 90.3% 91.8%);
+    -webkit-clip-path: polygon(0% 91.8%, 3% 93%, 92% 93%, 92% 2%, 90.3% 0%, 90.3% 91.8%);
+    clip-path: polygon(0% 91.8%, 3% 93%, 92% 93%, 92% 2%, 90.3% 0%, 90.3% 91.8%);
     transform-origin: top;
     pointer-events: none;
 }
@@ -90,7 +90,7 @@ main > div {
     display: grid;
     position: absolute;
     z-index: 1;
-    left: 49.5%;
+    left: 44.5vw;
     top: 5px;
     height: 30px;
     width: 25px;
@@ -202,8 +202,9 @@ label {
 input[type="checkbox"]:first-of-type:checked + main > div {
     animation-name: rijden_bottom, linksafslaan;
     animation-duration: 10s, 5s;
-    animation-delay: 0, 10s;
+    animation-delay: 0s, 8s;
     animation-fill-mode: forwards, forwards;
+    animation-timing-function: ease, ease-in;
 }
 
 input[type="checkbox"]:first-of-type:checked + main > div > div:first-of-type::before {
@@ -219,7 +220,7 @@ input[type="checkbox"]:first-of-type:checked + main > div > div:first-of-type::b
         top: 5px;
     }
     100% {
-        top: 105vh;
+        top: 70vh;
     }
 
 }
@@ -235,7 +236,7 @@ input[type="checkbox"]:first-of-type:checked + main > div > div:first-of-type::b
 
 @keyframes linksafslaan {
     0% {
-        left: 49.5%;
+        left: 44.5vw;
     }
     100% {
         left: 2.5%;
