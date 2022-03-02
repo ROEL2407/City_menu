@@ -18,7 +18,7 @@ body {
     background-color: #666666;
 }
 
-body > header:first-of-type {
+body>header:first-of-type {
     position: relative;
     color: white;
     font-family: 'Syne Tactile', cursive;
@@ -36,8 +36,8 @@ main {
     width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 4vw;
-    grid-row-gap: 6vh;
+    grid-column-gap: 6vw;
+    grid-row-gap: 8vh;
     padding: 10px 10px 20px 10px;
 }
 
@@ -45,22 +45,26 @@ main section {
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
     z-index: 1;
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.1),
-      15px 15px 15px rgba(0,0,0,0.1),
-      25px 25px 25px rgba(0,0,0,0.1),
-      30px 30px 30px rgba(0,0,0,0.1),
-      inset 1px 1px 2px #fff;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1),
+        15px 15px 15px rgba(0, 0, 0, 0.1),
+        25px 25px 25px rgba(0, 0, 0, 0.1),
+        30px 30px 30px rgba(0, 0, 0, 0.1),
+        inset 1px 1px 2px #fff;
     background-color: white;
     padding: 10px 15px;
     text-align: center;
     border: 3px solid #333333;
 }
 
+main section:first-of-type {
+    height: 100vh;
+}
+
 main section::before {
     content: "";
     position: absolute;
     background-color: lightgrey;
-    background-image: radial-gradient(circle, rgba(0,0,0,1) 30%, rgba(85,85,85,0) 100%);
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 1) 30%, rgba(85, 85, 85, 0) 100%);
     top: -1px;
     left: -1px;
     width: 111.5%;
@@ -73,20 +77,89 @@ main section::before {
 
 main section h2 {
     font-family: 'Redressed', cursive;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-size: clamp(24px, 2.5vw, 50px);
 }
 
+main section header p {
+    margin-bottom: 15px;
+    font-family: 'Redressed', cursive;
+    font-size: clamp(12px, 1.25vw, 25px);
+}
+
+/* main section header::after,
+main section h2::after {
+
+} */
+
+main section header h2 {
+    margin-bottom: 0px;
+}
+
+main section dl {
+    font-size: clamp(14px, 0.5vw, 16px);
+}
+
 main section dd:nth-of-type(even) {
-   margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 dl dd:nth-child(3n)::before {
     content: "\20AC";
 }
 
+dl dd:nth-child(3n)::after {
+    content: ",-";
+}
+
+/* ----- blockquote styling ----- */
+blockquote {
+    position: relative;
+    text-align: center;
+    padding: 1rem 1.2rem;
+    width: 80%;
+    /* create space for the quotes */
+    color: #484748;
+    margin: 1rem auto 2rem;
+    background:
+        linear-gradient(to right, #484748 4px, transparent 4px) 0 100%,
+        linear-gradient(to left, #484748 4px, transparent 4px) 100% 0,
+        linear-gradient(to bottom, #484748 4px, transparent 4px) 100% 0,
+        linear-gradient(to top, #484748 4px, transparent 4px) 0 100%;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+
+blockquote:before,
+blockquote:after {
+    position: absolute;
+    color: #484748;
+    font-size: 90px;
+}
+
+blockquote:before {
+    content: "“";
+    top: -20px;
+    margin-right: -20px;
+    right: 100%;
+}
+
+blockquote:after {
+    content: "”";
+    margin-left: -20px;
+    left: 100%;
+    top: auto;
+    bottom: -65px;
+}
+
+blockquote p {
+    margin-bottom: 10px;
+}
+
+/* ----- end blockquote styling ----- */
+
 /* ----- Autootje ---- */
-main > div {
+main > div:first-of-type {
     display: grid;
     position: absolute;
     z-index: 1;
@@ -96,7 +169,7 @@ main > div {
     width: 25px;
 }
 
-main > div::before {
+main > div:first-of-type::before {
     content: "";
     display: inline-block;
     height: 20px;
@@ -109,7 +182,7 @@ main > div::before {
     margin: 0 auto;
 }
 
-main > div::after {
+main > div:first-of-type::after {
     content: "";
     display: inline-block;
     height: 10px;
@@ -120,8 +193,9 @@ main > div::after {
     border-radius: 5px 5px 0px 0px;
     margin-top: 10px;
 }
+
 /* ---- lights ---- */
-main > div > div:first-of-type {
+main > div:first-of-type > div:first-of-type {
     position: relative;
     display: grid;
     width: 25px;
@@ -132,8 +206,8 @@ main > div > div:first-of-type {
     z-index: 1;
 }
 
-main > div > div:first-of-type:before,
-main > div > div:first-of-type:after {
+main > div:first-of-type > div:first-of-type:before,
+main > div:first-of-type > div:first-of-type:after {
     content: "";
     position: absolute;
     top: 2px;
@@ -145,18 +219,19 @@ main > div > div:first-of-type:after {
     grid-row: 1;
     border-radius: 10px;
 }
+
 /* ---- end lights ---- */
 /* ---- wheels ---- */
 
-main > div > div:last-of-type {
+main > div:first-of-type > div:last-of-type {
     position: relative;
     display: grid;
     width: 25px;
     height: 10px;
 }
 
-main > div > div:last-of-type:before,
-main > div > div:last-of-type:after {
+main > div:first-of-type > div:last-of-type:before,
+main > div:first-of-type > div:last-of-type:after {
     content: "";
     position: absolute;
     display: inline-block;
@@ -166,19 +241,21 @@ main > div > div:last-of-type:after {
     grid-column: 1;
     grid-row: 1;
 }
+
 /* ---- end wheels ---- */
 
 /* ---- wheels and lights ---- */
 
-main > div > div:first-of-type:before,
-main > div > div:last-of-type:before {
+main > div:first-of-type > div:first-of-type:before,
+main > div:first-of-type > div:last-of-type:before {
     left: 3px;
 }
 
-main > div > div:first-of-type:after,
-main > div > div:last-of-type:after {
+main > div:first-of-type > div:first-of-type:after,
+main > div:first-of-type > div:last-of-type:after {
     right: 4px;
 }
+
 /* ---- end wheels and lights ---- */
 
 /* ----- end Autootje ---- */
@@ -199,7 +276,7 @@ label {
     color: white;
 }
 
-input[type="checkbox"]:first-of-type:checked + main > div {
+input[type="checkbox"]:first-of-type:checked + main > div:first-of-type {
     animation-name: rijden_bottom, linksafslaan;
     animation-duration: 10s, 5s;
     animation-delay: 0s, 8s;
@@ -207,7 +284,7 @@ input[type="checkbox"]:first-of-type:checked + main > div {
     animation-timing-function: ease, ease-in;
 }
 
-input[type="checkbox"]:first-of-type:checked + main > div > div:first-of-type::before {
+input[type="checkbox"]:first-of-type:checked + main > div:first-of-type > div:first-of-type::before {
     animation-name: knipperlicht;
     animation-duration: 3s;
     animation-iteration-count: 2;
@@ -219,17 +296,29 @@ input[type="checkbox"]:first-of-type:checked + main > div > div:first-of-type::b
     0% {
         top: 5px;
     }
+
     100% {
-        top: 70vh;
+        top: 102vh;
     }
 
 }
 
 @keyframes knipperlicht {
-    0%, 20%, 40%, 60%, 80%, 100% {
+
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    100% {
         background-color: yellow;
     }
-    10%, 30%, 50%, 70%, 90% {
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
         background-color: orangered;
     }
 }
@@ -238,12 +327,99 @@ input[type="checkbox"]:first-of-type:checked + main > div > div:first-of-type::b
     0% {
         left: 44.5vw;
     }
+
     100% {
         left: 2.5%;
     }
 
 }
+/* ----- traffic light ----- */ 
+/* source:https://codesandbox.io/s/6h6jg */
 
-@media print {
-
+main > div:last-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100vh;
+    right: 40.5vw;
+    z-index: 1;
+    transform: skew(15deg, 330deg);
 }
+
+main > div:last-of-type div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 15px;
+    height: 20px;
+    padding: 0px 0px;
+    border-radius: 5px;
+    background-color: black;
+  }
+  main > div:last-of-type div span {
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: gray;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  main > div:last-of-type div span:first-of-type {
+    animation-name: redlight;
+  }
+  main > div:last-of-type div span:nth-of-type(2) {
+    animation-name: yellowlight;
+  }
+  main > div:last-of-type div span:last-of-type {
+    animation-name: greenlight;
+  }
+  main > div:last-of-type > span {
+    display: block;
+    width: 5px;
+    height: 10px;
+    background-color: darkgray;
+    border-radius: 0px 0px 2px 2px;
+  }
+
+  @keyframes redlight {
+    0%,
+    33% {
+      background-color: red;
+    }
+    34%,
+    100% {
+      background-color: gray;
+    }
+  }
+
+  @keyframes yellowlight {
+    0%,
+    33% {
+      background-color: gray;
+    }
+    34%,
+    66% {
+      background-color: yellow;
+    }
+    67%,
+    100% {
+      background-color: gray;
+    }
+  }
+
+  @keyframes greenlight {
+    0%,
+    66% {
+      background-color: gray;
+    }
+    67%,
+    100% {
+      background-color: green;
+    }
+  }
+
+/* ----- end traffic light ----- */ 
+@media print {}
