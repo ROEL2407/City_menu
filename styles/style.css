@@ -104,6 +104,15 @@ main section dd:nth-of-type(even) {
     margin-bottom: 10px;
 }
 
+dt {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+dl dd:nth-of-type(odd) {
+    font-size: 12px;
+}
+
 dl dd:nth-child(3n)::before {
     content: "\20AC";
 }
@@ -333,8 +342,8 @@ input[type="checkbox"]:first-of-type:checked + main > div:first-of-type > div:fi
     }
 
 }
-/* ----- traffic light ----- */ 
-/* source:https://codesandbox.io/s/6h6jg */
+/* ----- traffic light ----- 
+   source:https://codesandbox.io/s/6h6jg */
 
 main > div:last-of-type {
     display: flex;
