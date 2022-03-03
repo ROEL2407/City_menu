@@ -481,6 +481,19 @@ main > i:nth-of-type(6) {
 main > i {
     display: none;
 }
+
+@media (prefers-color-scheme: dark) {
+    main > section {
+      color: #fff;
+      background: #000;
+    }
+    dl, blockquote, blockquote:after, blockquote:before {
+      color: #fff;
+      border-color: #fff;
+    }
+
+  }
+
 @media print {
     main {
         display: block;
