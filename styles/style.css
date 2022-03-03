@@ -481,4 +481,45 @@ main > i:nth-of-type(6) {
 main > i {
     display: none;
 }
-@media print {}
+@media print {
+    main {
+        display: block;
+    }
+
+    main section {
+        float: left;
+        width: 40%;
+        height: fit-content;
+        page-break-inside: avoid;
+        box-shadow: none;
+        margin-left: 1cm;
+        margin-bottom: 1cm;
+    }
+
+    main section:nth-of-type(even) {
+        page-break-after: always;
+    }
+
+    main > section:before {
+        display: none;
+        clip-path: none;
+        -webkit-clip-path: none;
+        opacity: 0;
+    }
+
+    main section:first-of-type {
+        height: fit-content;
+    }
+
+    label{
+        display: none;
+    }
+
+    main > div:last-of-type,
+    main > div:first-of-type {
+        display: none;
+    }
+    @page {
+        margin-top: 2cm;
+    }
+}
