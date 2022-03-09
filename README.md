@@ -23,8 +23,7 @@ In this repository I've made a restaraunt menu with only css. This so I can get 
 With this application you can look through some of the art objects Rijksmuseum has to offer. You can get more information about the pieces and make your own perspectives on it.
 
 ## Example images
-<img src="https://github.com/ROEL2407/City_menu/blob/main/wiki_images/voorbeeld_overzicht.PNG">
-<img src="https://github.com/ROEL2407/City_menu/blob/main/wiki_images/voorbeeld_detail.PNG">
+<img src="https://github.com/ROEL2407/City_menu/blob/main/wiki_images/voorbeeld.PNG">
 
 ## Installation
 Clone this repository to your own device:
