@@ -1,46 +1,57 @@
-# CSS to the Rescue @cmda-minor-web 2021 - 2022
+### Table of contents
+Assignment<br />
+[Where is this repository for?](https://github.com/ROEL2407/City_menu#where-is-this-repository-for)<br />
+[What's the goal of this repository?](https://github.com/ROEL2407/City_menu#whats-the-goal-of-this-repository)
 
-Wij vinden het web fascinerend. De laatste jaren is CSS een volwassen en zeer krachtige taal geworden (niet langer een bottleneck - integendeel). Veel van de (nieuwe) **CSS-lekkernijen** worden echter nog niet ten volle benut. Sommige delen van de spec worden onterecht (nog) niet bemind, andere delen zijn zo groot en complex dat we mogelijkheden nog niet hebben doorgrond. Aan jou de mooie opdracht om de onontgonnen delen van de CSS-wereld in kaart te brengen.
+Project<br />
+[Usage](https://github.com/ROEL2407/City_menu#usage)<br />
+[Example images](https://github.com/ROEL2407/City_menu#example-images)<br />
+[Installation](https://github.com/ROEL2407/City_menu#installation)<br />
+[Online version](https://github.com/ROEL2407/City_menu#online-version)<br />
+[Rubric](https://github.com/ROEL2407/City_menu#rubric)<br />
+[Commits](https://github.com/ROEL2407/City_menu#commits)<br />
+[Resources](https://github.com/ROEL2407/City_menu#resources)<br />
+[License](https://github.com/ROEL2407/City_menu#license)
 
-**In dit vierweekse vak ga je experimenteren met (voor jou) nieuwe CSS technieken - om daarna/mee een innovatieve, experimentele én aangename ervaring te creëren - met alleen vanilla HTML en vanilla CSS (frameworks, preprocessors, libraries en JavaScript zijn niet toegestaan).**
+## Where is this repository for?
+This repository is for my lessons from the minor Web Development from the HvA. 
 
-Goed om te weten: Het experiment wordt gewaardeerd - zelfs/zeker als het niet (helemaal) lukt. Voel je vrij om verder te gaan dan de CSS-technieken die je al beheerst.
+## What's the goal of this repository?
+In this repository I've made a restaraunt menu with only css. This so I can get a full understanding of what CSS really can do
 
-## Dingen om vooraf te doen
-- 🔱 **Fork** deze repository.
-- ✅ [**Enroll** je voor de minor via de courselector](https://icthva.sharepoint.com/sites/courseselector#/CourseSelector/web-design-and-development/2021-2022) (dan kun je je werk straks ook op [DLO](https://dlo.mijnhva.nl/d2l/home/324147) opleveren).
-- 📒 **Bekijk** het [programma](https://cmda-minor-web.github.io/css-to-the-rescue-2122/files/CSSttR-2122-Kick-off.pdf) (pdf 48MB), [het quizje](https://cmda-minor-web.github.io/css-to-the-rescue-2122/files/CSSttR-2122-Quizje.pdf) (pdf 2MB) en de [kennismakingsoefening](https://cmda-minor-web.github.io/css-to-the-rescue-2122/docs/oefening.html) alvast even.
+## Usage
+With this application you can look through some of the art objects Rijksmuseum has to offer. You can get more information about the pieces and make your own perspectives on it.
 
-## Opdrachten
-Het vak bestaat uit:
-- [Een kennismakingsoefening](https://cmda-minor-web.github.io/css-to-the-rescue-2122/oefening.html)
-- [De eindopdracht](https://cmda-minor-web.github.io/css-to-the-rescue-2122/index.html)
+## Example images
+<img src="https://github.com/ROEL2407/City_menu/blob/main/wiki_images/voorbeeld_overzicht.PNG">
+<img src="https://github.com/ROEL2407/City_menu/blob/main/wiki_images/voorbeeld_detail.PNG">
 
-De [beoordelingscriteria voor de eindopdracht](https://cmda-minor-web.github.io/css-to-the-rescue-2122/beoordelingsformulier.html) op een rijte.
+## Installation
+Clone this repository to your own device:
+```console
+git clone https://github.com/ROEL2407/City_menu.git
+```
 
-## Themasessies
-Schrijf je in het [CSSttR channel](https://teams.microsoft.com/l/channel/19%3a1261f148f4a14a788c98784a96d361c4%40thread.tacv2/03%2520-%2520CSS%2520to%2520the%2520Rescue?groupId=36b2af3f-d616-4e89-b714-f45196f2a6ad&tenantId=0907bb1e-21fc-476f-8843-02d09ceb59a7) bij 'Files' in de 'Indeling en Planning' Excel in voor zowel woensdag als donderdag in voor een themasessie naar je keuze (1 per dag):
-- [Materiaal voor de themasessies](https://cmda-minor-web.github.io/css-to-the-rescue-2122/themas.html)
+Use a local server to host the website. I use the Live server extension in Visual Studio Code to host.
 
-## Programma
-Het vak beslaat 4 weken. Bekijk de [kick-off presentatie](https://cmda-minor-web.github.io/css-to-the-rescue-2122/files/CSSttR-2122-Kick-off.pdf) (pdf 48MB). 
+## Online version
+If you don't want to download everything, there's an online version for you [here](https://roel2407.github.io/City_menu/).
 
-In Teams vind je het [CSSttR channel](https://teams.microsoft.com/l/channel/19%3a1261f148f4a14a788c98784a96d361c4%40thread.tacv2/03%2520-%2520CSS%2520to%2520the%2520Rescue?groupId=36b2af3f-d616-4e89-b714-f45196f2a6ad&tenantId=0907bb1e-21fc-476f-8843-02d09ceb59a7) bij 'Files' de Excel met de 'Indeling en Planning'. Daar schrijf je je ook in voor themasessies en het eindgesprek.
+## Rubric
+For this assignment I'm being rated on the folllowing points:
 
-Colleges, lessen en gesprekken vinden plaats in het TTH (4e verdieping :-).
+## Commits
+In this repo I will commit my work. To make this more visible for myself and others I've added little headers to the commit titles:
+* Created = a file is created
+* Updated = updated a file or piece of code
+* Delete = deleted a file
 
-## Docenten
-- Vasilis van Gemert
-- Sanne 't Hooft
+## Resources
+### Credits
+* Our teachers at the minor Web Development.
+* My fellow students who've helped me resolving some problems and learning me new types of tricks.
+* Stackoverflow for giving me the answer that I could tweak or that helped me understand my problem in the code better.  
+<hr />
 
-## Leerdoelen
-- Je kunt experimenteren met (voor jou) nieuwe css-technieken - om de mogelijkheden op waarde te schatten en te gebruiken waar gepast.
-- Je hebt begrip van de volle kracht en mogelijkheden van CSS. Je laat zien dat CSS meer kan dan allen web pages 'stylen'.
-- Je hebt begrip van de interactie-technieken van CSS (en HTML). De UX is aangenaam bruikbaar binnen de gekozen context(en).
-- Je hebt begrip hoe progressive enhancement elegant toe te passen. Je laat zien dat je cascade, inheritance en specificity kunt toepassen.
-
-
-## De Selector First CSS & No JS aanpak
-Het **eerste uitgangspunt** is dat je *geen* ID's en classes gebruikt. Niet omdat ze niet nuttig zijn, maar om te oefenen met de [vele CSS selectoren](https://css-tricks.com/almanac/) die je tot je beschikking hebt. ID's mag je alleen gebruiken om de :target selector te triggeren en uiteraard om labels te koppelen aan inputs. En als het echt echt echt niet anders kan, heb je permissie om een enkele class toe te voegen.
-
-Een **tweede uitgangspunt** is dat je *geen* JavaScript gebruikt. Als iets niet kan met CSS, dan zal je iets anders moeten verzinnen om te maken. We onderzoeken de mogelijkheden van CSS in dit vak, en niet die van JS.
+## License
+Usage is provided under the [MIT License](https://github.com/ROEL2407/City_menu/blob/main/LICENSE). See LICENSE for the full details.
