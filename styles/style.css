@@ -551,22 +551,19 @@ main>i {
 
     main>div:first-of-type {
         left: 82.5vw;
-        top: 6.5em;
     }
 
     main>div:last-of-type {
         right: 6vw;
     }
 
-    @keyframes rijden_bottom {
-        0% {
-            top: 6.5em;
-        }
+    main> div:nth-of-type(2) {
+        top: 207vh;
+        right: 5.5vw;
+    }
 
-        100% {
-            top: 102vh;
-        }
-
+    label {
+        left: 66vw;
     }
 
     @keyframes linksafslaan {
@@ -580,6 +577,35 @@ main>i {
 
     }
 }
+
+@media only screen and (max-width : 560px) {
+    label {
+        font-size: 11px;
+        top: 4em;
+        left: 86vw;
+        border: 1px solid black;
+    }
+
+    label::after, label::before {
+        border: 1px solid black;
+    }
+
+    main>div:first-of-type {
+        top: 6.5em;
+    }
+
+    @keyframes rijden_bottom {
+        0% {
+            top: 6.5em;
+        }
+
+        100% {
+            top: 102vh;
+        }
+
+    }
+}
+
 
 @media (prefers-color-scheme: dark) {
     main>section {
