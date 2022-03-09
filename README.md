@@ -38,6 +38,7 @@ If you don't want to download everything, there's an online version for you [her
 
 ## Rubric
 For this assignment I'm being rated on the folllowing points:
+<img src="https://github.com/ROEL2407/City_menu/blob/main/wiki_images/rubric.png">
 
 ## Commits
 In this repo I will commit my work. To make this more visible for myself and others I've added little headers to the commit titles:
