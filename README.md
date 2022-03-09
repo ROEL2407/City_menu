@@ -90,3 +90,4 @@ Na de iconen gemaakt te hebben, heb ik eerst prioriteit gelegd bij het print sty
 ### Week 4
 
 <strong>Dag 7</strong></br>
+Vandaag ben ik begonnen met het respnsive maken van de gehele applicatie. Dit was vrij snel gedaanwaardoor ik snel door kon. Ik had nog een paar punten die ik wilde doen op deze laatste dag. Deze heb ik dan ook bij mijn [Issues](https://github.com/ROEL2407/City_menu/issues) neergezet. Vervolgens heb ik mijn animatie button vormgegeven. Na eindeloos bedenken wat ik wilde, heb ik mede door functionaliteitredenen van de animatie van de button het zo gemaakt dat het lijkt op een soort trapenhuisje richting het dak. Hierna ben ik mijn readme verder gaan schrijven en ben ik gaan kijken of ik nog kleine dingen ernaast kon doen zoals licht vanuit de koplampen met een darkmode.
