@@ -36,6 +36,8 @@ Hierdoor kreeg ik gelijk inspiratie. Het lijkt nu alsof de blokken wolkenkrabber
 
 Het autootje heb ik dan ook gelijk gemaakt. Deze wilde ik in eerste instantie  met 1div en een before en after. Hier kwam ik al snel achter dat ik niet precies wist hoe ik dit kon fixen. Om latere problemen te voorkomen heb ik nu het verdeeld waar de lichten en de wielen in divs zitten.
 
+<img src="https://github.com/ROEL2407/City_menu/blob/main/wiki_images/auto.png">
+
 <strong>Dag 4</strong></br>
 Vandaag ben ik begonnen met de interactie en animatie van het menu. Ik wilde graag dat op basis van een checkbox die aangevinkt is of niet, het autootje te laten rijden. Hiervoor heb ik een checkbox met een label erbij gemaakt zodat er op de label geklikt kan worden waarna de auto gaat rijden.
 
@@ -58,6 +60,8 @@ Vandaag ben ik begonnen met het responsive maken van de rit van de auto. Dit had
 
 Hierna heb ik kleine aanpassingen gedaan aan de tekst zelf zoals de subtitels van de "gebouwen" in hetzelfde font gezet als de titels en quotes erg mooi vormgegeven op basis van een voorbeeld die ik online gevonden had en aangepast heb naar mijn stijl.
 
+<img src="https://github.com/ROEL2407/City_menu/blob/main/wiki_images/quote.png">
+
 Daarna ben ik online gaan zoeken hoe ik mijn idee van een stad meer kan verzorgen. Hierdoor ben ik gaan zoeken hoe je een boom kan maken met CSS. Dit was niet echt te vinden. Ik heb toen een voorbeeld gevonden van een stoplicht. Deze heb ik vervolgens in de grootte gemaakt die ik nodig had en een paal erbij gevoegd. Omdat ik wat meer de diepte in het design van het verkeerslicht wilde krijgen ben ik met transform: skew; aan de gang gegaan. Dit was iets wat ik ooit gebruikt had, door MDN was dit vrij makkelijk te begrijpen en staat het stoplicht iets gedraaid.
 
 S'avonds heb ik nog gechecked of het aanpassen van de height voor de autorit gewerkt heeft. ik ben op een ander scherm gaan kijken en hier werkte het ook goed.
@@ -67,13 +71,21 @@ Vandaag ben ik begonnen met het dupliceren van mijn stoplicht. Door de functie -
 
 Nadat ik mijn stoplicht gedupliceerd had, kwam ik erachter dat transform skew roet in het eten gooide. De normale grootte van het element wordt gepakt en er wordt niet gekeken naar skew, hierdoor vallen er delen van mijn stoplicht weg. De hoogte of de breedte van het nieuwe stoplicht aanpassen had geen nut. Hierdoor heb ik de skew van het initiële stoplicht veranderd naar de gedupliceerde versie.
 
+Chrome:
+<img src="https://github.com/ROEL2407/City_menu/blob/main/wiki_images/stoplicht_chrome.PNG">
+Firefox:
+<img src="https://github.com/ROEL2407/City_menu/blob/main/wiki_images/stoplicht.PNG">
+
+
 Hierna ben ik begonnen met ingrediënten uitzoeken die een allergische reactie kunnen veroorzaken. Hier wil ik een strong omheen zetten met een andere kleur dan de normale tekst zodat duidelijk te zien is, dat de ingrediënten erin zitten.
 
 Doordat ik niet veel tijd meer heb en ook nog de print style moet doen heb ik gekozen voor font awesome iconen. Echter zijn sommige betaald en wil ik daar niet vor betalen. Hierdoor heb ik de vorm overgenomen in Illustrator en het svg path gebruikt voor een clip path. Het svg path werkte alleen niet gelijk, ik heb Vasilis hiervoor om raad gevraagd en die raadde mij aan om [SVGOMG](https://jakearchibald.github.io/svgomg/) te gebruiken. Dit optimaliseerd de svg en dus ook het path. Met dit path lukte het echter nog steeds niet. Ik heb het vervolgens in een [online converter](https://path-to-points.netlify.app/) gezet die een svg path omgooit naar een cip path. Hierdoor kreeg ik geen error meer, maar het icoon was nog steeds niet te zien. Dit kwam uiteindelijk doordat ik geen background-color aangegeven had wat erg logisch is.
 
 Het volgende probleem was dat het icoon te groot was voor de converter. Ik heb vervolgens in Illustrator het icoon kleiner gemaakt en dit werkte.
 
-Na de iconen gemaakt te hebben, heb ik eerst prioriteit gelegd bij het print style die ik er heel graag in wil hebben. Als eerste heb ik het heel erg simpel gemaakt door overbodige styling te reverten binnen het print stylesheet. Ik kwam na wat zwoegen achter dat display grid en page breaks niet samen werken. Hierna heb ik display flex in plaats van display grid geprobeerd maar ik kreeg hetzelfde resultaat. Uiteindelijk heb ik, om hetzelfde resultaat te krijgen, float left op de sections gezet en een width van 40% zodat ze in paren naast elkaar komen te staan.  
+Na de iconen gemaakt te hebben, heb ik eerst prioriteit gelegd bij het print style die ik er heel graag in wil hebben. Als eerste heb ik het heel erg simpel gemaakt door overbodige styling te reverten binnen het print stylesheet. Ik kwam na wat zwoegen achter dat display grid en page breaks niet samen werken. Hierna heb ik display flex in plaats van display grid geprobeerd maar ik kreeg hetzelfde resultaat. Uiteindelijk heb ik, om hetzelfde resultaat te krijgen, float left op de sections gezet en een width van 40% zodat ze in paren naast elkaar komen te staan.
+
+<img src="https://github.com/ROEL2407/City_menu/blob/main/wiki_images/print.PNG">
 
 ### Week 4
 
