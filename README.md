@@ -1,9 +1,9 @@
 ## Table of contents:
 
-[Week 1]()</br>
-[Week 2]()</br>
-[Week 3]()</br>
-[Week 4]()</br>
+[Week 1](https://github.com/ROEL2407/City_menu#week-1)</br>
+[Week 2](https://github.com/ROEL2407/City_menu#week-2)</br>
+[Week 3](https://github.com/ROEL2407/City_menu#week-3)</br>
+[Week 4](https://github.com/ROEL2407/City_menu#week-4)</br>
 
 ### Week 1
 
@@ -71,9 +71,9 @@ Vandaag ben ik begonnen met het dupliceren van mijn stoplicht. Door de functie -
 
 Nadat ik mijn stoplicht gedupliceerd had, kwam ik erachter dat transform skew roet in het eten gooide. De normale grootte van het element wordt gepakt en er wordt niet gekeken naar skew, hierdoor vallen er delen van mijn stoplicht weg. De hoogte of de breedte van het nieuwe stoplicht aanpassen had geen nut. Hierdoor heb ik de skew van het initiële stoplicht veranderd naar de gedupliceerde versie.
 
-Chrome:
-<img src="https://github.com/ROEL2407/City_menu/blob/main/wiki_images/stoplicht_chrome.PNG">
-Firefox:
+Chrome:<br />
+<img src="https://github.com/ROEL2407/City_menu/blob/main/wiki_images/stoplicht_chrome.PNG"><br />
+Firefox:<br />
 <img src="https://github.com/ROEL2407/City_menu/blob/main/wiki_images/stoplicht.PNG">
 
 
