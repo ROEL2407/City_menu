@@ -1,18 +1,18 @@
 ## Table of contents:
 
-[Week 1]()
-[Week 2]()
-[Week 3]()
-[Week 4]()
+[Week 1]()</br>
+[Week 2]()</br>
+[Week 3]()</br>
+[Week 4]()</br>
 
 ### Week 1
 
-<strong>Dag 1</strong>
+<strong>Dag 1</strong></br>
 Vandaag ben ik begonnen met het project van CSS to the rescue. Hier heb ik voor de case gekozen van de menu kaart. Als eerste wilde ik writing mode verkennen. Hier heb ik nog niet eerder mee gewerkt en het lijkt mij in sommige gevallen erg handig om te weten.
 
 ![writing mode van boven naar beneden in plaats van links naar rechts](https://github.com/ROEL2407/css-to-the-rescue-2122/blob/main/wiki_images/writing%20mode.PNG)
 
-<strong>Dag 2</strong>
+<strong>Dag 2</strong></br>
 Op vrijdag had ik genoeg tijd tussen mijn gesprekjes om aan CSS to the rescue te gaan. Hiervoor ben ik bezig geweest met grid. Dit ging mij gemakkelijk af omdat ik flexbox al erg ken en grid in mijn ogen het er redelijk op lijkt.
 
 hierna ben ik met een shadow begonnen die ik op de grid items wil. Ik wil namelijk het laten lijken alsof ze 3D van het scherm afkomen met behulp van deze shadow.
@@ -27,7 +27,7 @@ Uiteindelijk ben ik gekomen bij clip paths. Dit had ik nog niet eerder gebruikt 
 
 ### Week 2
 
-<strong>Dag 3</strong>
+<strong>Dag 3</strong></br>
 Vandaag ben ik verder gegaan met de shadow op de grid items. Na een beetje stuntelen van welk type gradient ik moest gebruiken, welke kleuren en wanneer de gradient moest over gaan op elkaar kwam ik op de volgende uitkomst waar ik erg tevreden mee ben:
 
 ![](https://github.com/ROEL2407/css-to-the-rescue-2122/blob/main/wiki_images/building.PNG)
@@ -36,7 +36,7 @@ Hierdoor kreeg ik gelijk inspiratie. Het lijkt nu alsof de blokken wolkenkrabber
 
 Het autootje heb ik dan ook gelijk gemaakt. Deze wilde ik in eerste instantie  met 1div en een before en after. Hier kwam ik al snel achter dat ik niet precies wist hoe ik dit kon fixen. Om latere problemen te voorkomen heb ik nu het verdeeld waar de lichten en de wielen in divs zitten.
 
-<strong>Dag 4</strong>
+<strong>Dag 4</strong></br>
 Vandaag ben ik begonnen met de interactie en animatie van het menu. Ik wilde graag dat op basis van een checkbox die aangevinkt is of niet, het autootje te laten rijden. Hiervoor heb ik een checkbox met een label erbij gemaakt zodat er op de label geklikt kan worden waarna de auto gaat rijden.
 
 Dit werkte in eerste instantie niet omdat ik de label in mijn header had gezet waar een z-index van -1 op staat, waardoor de label unclickable werd. Hierna werkte het nog steeds niet. Ik ben online gaan zoeken en kwam erachter dat css de structuur van de html leest van boven naar beneden. Hierdoor moest de label en input boven de auto staan. Echter werkte dit nog steeds niet. Ik heb dit op een laag pitje gezet en ben vervolgens verder gegaan met wat andere dingen.
@@ -53,7 +53,7 @@ Na een klein beetje stuntelen en vragen hoe ik een child element kan betrekken i
 
 ### Week 3
 
-<strong>Dag 5</strong>
+<strong>Dag 5</strong></br>
 Vandaag ben ik begonnen met het responsive maken van de rit van de auto. Dit had ik in de tussentijd getest nadat ik een bug verholpen had waarbij de auto gelijk naar links reed. Dit heb ik opgelost door middel van een vaste hoogte te zetten op het "gebouw" waar de auto langs rijdt.
 
 Hierna heb ik kleine aanpassingen gedaan aan de tekst zelf zoals de subtitels van de "gebouwen" in hetzelfde font gezet als de titels en quotes erg mooi vormgegeven op basis van een voorbeeld die ik online gevonden had en aangepast heb naar mijn stijl.
@@ -62,7 +62,7 @@ Daarna ben ik online gaan zoeken hoe ik mijn idee van een stad meer kan verzorge
 
 S'avonds heb ik nog gechecked of het aanpassen van de height voor de autorit gewerkt heeft. ik ben op een ander scherm gaan kijken en hier werkte het ook goed.
 
-<strong>Dag 6</strong>
+<strong>Dag 6</strong></br>
 Vandaag ben ik begonnen met het dupliceren van mijn stoplicht. Door de functie -moz-element te gebruiken kan ik een element met de child elementen dupliceren. Dit werkt wel alleen nog in Firefox aangezien het nergens anders nog gesupport wordt.
 
 Nadat ik mijn stoplicht gedupliceerd had, kwam ik erachter dat transform skew roet in het eten gooide. De normale grootte van het element wordt gepakt en er wordt niet gekeken naar skew, hierdoor vallen er delen van mijn stoplicht weg. De hoogte of de breedte van het nieuwe stoplicht aanpassen had geen nut. Hierdoor heb ik de skew van het initiële stoplicht veranderd naar de gedupliceerde versie.
@@ -77,4 +77,4 @@ Na de iconen gemaakt te hebben, heb ik eerst prioriteit gelegd bij het print sty
 
 ### Week 4
 
-<strong>Dag 7</strong>
+<strong>Dag 7</strong></br>
