@@ -10,7 +10,7 @@
 <strong>Dag 1</strong></br>
 Vandaag ben ik begonnen met het project van CSS to the rescue. Hier heb ik voor de case gekozen van de menu kaart. Als eerste wilde ik writing mode verkennen. Hier heb ik nog niet eerder mee gewerkt en het lijkt mij in sommige gevallen erg handig om te weten.
 
-![writing mode van boven naar beneden in plaats van links naar rechts](https://github.com/ROEL2407/css-to-the-rescue-2122/blob/main/wiki_images/writing%20mode.PNG)
+![writing mode van boven naar beneden in plaats van links naar rechts](https://github.com/ROEL2407/css-to-the-rescue-2122/blob/main/wiki_images/writing%20mode.PNG?raw=true)
 
 <strong>Dag 2</strong></br>
 Op vrijdag had ik genoeg tijd tussen mijn gesprekjes om aan CSS to the rescue te gaan. Hiervoor ben ik bezig geweest met grid. Dit ging mij gemakkelijk af omdat ik flexbox al erg ken en grid in mijn ogen het er redelijk op lijkt.
@@ -19,7 +19,7 @@ hierna ben ik met een shadow begonnen die ik op de grid items wil. Ik wil nameli
 
 Allereerst ben ik begonnen met een normale box-shadow. Hierbij kwam ik erachter dat ook aan de zijkanten van de shadow, een gradient komt en niet een rechte afkapping:
 
-![Box shadow](https://github.com/ROEL2407/css-to-the-rescue-2122/blob/main/wiki_images/box-shadow.PNG)
+![Box shadow](https://github.com/ROEL2407/css-to-the-rescue-2122/blob/main/wiki_images/box-shadow.PNG?raw=true)
 
 Hierna ben ik verder gaan zoeken naar een oplossing die leek op wat ik wilde verwerkelijken. Een mede student die naast mij zat was bezig met zijn opdracht toen ik zag dat hij een voorbeeld had. Daarin zat precies de shadow die ik dacht nodig te hebben. Ik heb deze link gevraagd en heb vervolgens dit uitgeprobeerd. Dit had kunnen werken maar omdat mijn blokken waar ik de shadow op wilde te groot waren, werd de shadow zo groot dat deze in een andere shadow ging lopen. 
 
@@ -30,13 +30,13 @@ Uiteindelijk ben ik gekomen bij clip paths. Dit had ik nog niet eerder gebruikt 
 <strong>Dag 3</strong></br>
 Vandaag ben ik verder gegaan met de shadow op de grid items. Na een beetje stuntelen van welk type gradient ik moest gebruiken, welke kleuren en wanneer de gradient moest over gaan op elkaar kwam ik op de volgende uitkomst waar ik erg tevreden mee ben:
 
-![](https://github.com/ROEL2407/css-to-the-rescue-2122/blob/main/wiki_images/building.PNG)
+![](https://github.com/ROEL2407/css-to-the-rescue-2122/blob/main/wiki_images/building.PNG?raw=true)
 
 Hierdoor kreeg ik gelijk inspiratie. Het lijkt nu alsof de blokken wolkenkrabbers zijn. Hiermee kwam ik op het idee om een weg tussen de "gebouwen" te leggen en met een interactie een autootje te laten rijden. hiervoor heb ik de achtergrond van de main nog even aangepast om dit op een weg te laten lijken
 
 Het autootje heb ik dan ook gelijk gemaakt. Deze wilde ik in eerste instantie  met 1div en een before en after. Hier kwam ik al snel achter dat ik niet precies wist hoe ik dit kon fixen. Om latere problemen te voorkomen heb ik nu het verdeeld waar de lichten en de wielen in divs zitten.
 
-<img src="https://github.com/ROEL2407/City_menu/blob/main/wiki_images/auto.png">
+<img src="https://github.com/ROEL2407/City_menu/blob/main/wiki_images/auto.png?raw=true">
 
 <strong>Dag 4</strong></br>
 Vandaag ben ik begonnen met de interactie en animatie van het menu. Ik wilde graag dat op basis van een checkbox die aangevinkt is of niet, het autootje te laten rijden. Hiervoor heb ik een checkbox met een label erbij gemaakt zodat er op de label geklikt kan worden waarna de auto gaat rijden.
@@ -60,7 +60,7 @@ Vandaag ben ik begonnen met het responsive maken van de rit van de auto. Dit had
 
 Hierna heb ik kleine aanpassingen gedaan aan de tekst zelf zoals de subtitels van de "gebouwen" in hetzelfde font gezet als de titels en quotes erg mooi vormgegeven op basis van een voorbeeld die ik online gevonden had en aangepast heb naar mijn stijl.
 
-<img src="https://github.com/ROEL2407/City_menu/blob/main/wiki_images/quote.png">
+<img src="https://github.com/ROEL2407/City_menu/blob/main/wiki_images/quote.png?raw=true">
 
 Daarna ben ik online gaan zoeken hoe ik mijn idee van een stad meer kan verzorgen. Hierdoor ben ik gaan zoeken hoe je een boom kan maken met CSS. Dit was niet echt te vinden. Ik heb toen een voorbeeld gevonden van een stoplicht. Deze heb ik vervolgens in de grootte gemaakt die ik nodig had en een paal erbij gevoegd. Omdat ik wat meer de diepte in het design van het verkeerslicht wilde krijgen ben ik met transform: skew; aan de gang gegaan. Dit was iets wat ik ooit gebruikt had, door MDN was dit vrij makkelijk te begrijpen en staat het stoplicht iets gedraaid.
 
@@ -72,9 +72,9 @@ Vandaag ben ik begonnen met het dupliceren van mijn stoplicht. Door de functie -
 Nadat ik mijn stoplicht gedupliceerd had, kwam ik erachter dat transform skew roet in het eten gooide. De normale grootte van het element wordt gepakt en er wordt niet gekeken naar skew, hierdoor vallen er delen van mijn stoplicht weg. De hoogte of de breedte van het nieuwe stoplicht aanpassen had geen nut. Hierdoor heb ik de skew van het initiële stoplicht veranderd naar de gedupliceerde versie.
 
 Chrome:<br />
-<img src="https://github.com/ROEL2407/City_menu/blob/main/wiki_images/stoplicht_chrome.PNG"><br />
+<img src="https://github.com/ROEL2407/City_menu/blob/main/wiki_images/stoplicht_chrome.PNG?raw=true"><br />
 Firefox:<br />
-<img src="https://github.com/ROEL2407/City_menu/blob/main/wiki_images/stoplicht.PNG">
+<img src="https://github.com/ROEL2407/City_menu/blob/main/wiki_images/stoplicht.PNG?raw=true">
 
 
 Hierna ben ik begonnen met ingrediënten uitzoeken die een allergische reactie kunnen veroorzaken. Hier wil ik een strong omheen zetten met een andere kleur dan de normale tekst zodat duidelijk te zien is, dat de ingrediënten erin zitten.
@@ -85,7 +85,7 @@ Het volgende probleem was dat het icoon te groot was voor de converter. Ik heb v
 
 Na de iconen gemaakt te hebben, heb ik eerst prioriteit gelegd bij het print style die ik er heel graag in wil hebben. Als eerste heb ik het heel erg simpel gemaakt door overbodige styling te reverten binnen het print stylesheet. Ik kwam na wat zwoegen achter dat display grid en page breaks niet samen werken. Hierna heb ik display flex in plaats van display grid geprobeerd maar ik kreeg hetzelfde resultaat. Uiteindelijk heb ik, om hetzelfde resultaat te krijgen, float left op de sections gezet en een width van 40% zodat ze in paren naast elkaar komen te staan.
 
-<img src="https://github.com/ROEL2407/City_menu/blob/main/wiki_images/print.PNG">
+<img src="https://github.com/ROEL2407/City_menu/blob/main/wiki_images/print.PNG?raw=true">
 
 ### Week 4
 
